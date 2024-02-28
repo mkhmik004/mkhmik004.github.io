@@ -172,3 +172,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+                document.addEventListener("DOMContentLoaded", function() {
+                  var lazyVideos = [].slice.call(document.querySelectorAll(".lazy-load"));
+              
+                  if ("IntersectionObserver" in window) {
+                    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+                      entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                          var lazyVideo = entry.target;
+                          lazyVideo.innerHTML = '<iframe src="' + lazyVideo.dataset.src + '" class="embed-responsive-item" title="YouTube video player" allowfullscreen></iframe>';
+                          lazyVideoObserver.unobserve(lazyVideo);
+                        }
+                      });
+                    });
+              
+                    lazyVideos.forEach(function(lazyVideo) {
+                      lazyVideoObserver.observe(lazyVideo);
+                    });
+                  }
+                });
+            
