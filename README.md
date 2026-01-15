@@ -1,65 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0d1117; /* GitHub Dark Dimmed */
-            color: #c9d1d9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            max-width: 600px;
-            padding: 20px;
-        }
-        h1 { color: #ffffff; margin-bottom: 10px; }
-        p { font-size: 1.2rem; line-height: 1.6; color: #8b949e; }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #238636; /* GitHub Green */
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn:hover { background-color: #2ea043; }
-        .links { margin-top: 30px; }
-        .links a {
-            color: #58a6ff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .links a:hover { text-decoration: underline; }
-    </style>
-</head>
-<body>
+### 👨‍💻 Terminal Access: Granted
 
-    <div class="container">
-        <h1>Hello, I'm [Your Name]</h1>
-        <p>
-            I am a Developer passionate about Cloud Computing, Java, and Building Cool Things.
-            Welcome to my digital garden.
-        </p>
-        
-        <a href="https://github.com/[YourUsername]" class="btn">View My Projects</a>
+```bash
+# 1. Initialize User
+> whoami
+Name: [Your Name]
+Role: Backend & Cloud Engineer (Java)
+Location: South Africa 🇿🇦
 
-        <div class="links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter/X</a>
-            <a href="mailto:email@example.com">Contact Me</a>
-        </div>
-    </div>
+# 2. Check Current Objective
+> cat current_focus.txt
+"Building a people-tracking platform using Tello Drones and Cloud storage."
 
-</body>
-</html>
+# 3. List Tech Stack
+> ls -la ./skills
+total 5
+drwxr-xr-x  2 user  staff  64 Jan 15 13:14 .
+drwxr-xr-x  8 user  staff  256 Jan 15 13:14 ..
+-rw-r--r--  1 user  staff  Java (Core, OOP, Streams)
+-rw-r--r--  1 user  staff  Spring Boot (APIs, Security)
+-rw-r--r--  1 user  staff  C# / .NET (Cross-training)
+-rw-r--r--  1 user  staff  Cloud (AWS/Azure)
+-rw-r--r--  1 user  staff  DevOps (Docker, CI/CD)
+
+# 4. Run Status
+> ./status.sh
+Loading... [||||||||||] 100%
+Health:  🟢 Excellent
+Code:    ☕ Daily
+Mood:    🚀 Ready to Deploy
+
+# 5. Contact
+> echo "Let's connect!"
+[Linked In] | [Email]
